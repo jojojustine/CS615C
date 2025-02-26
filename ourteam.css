@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+.navbar {
+    background:#d0cfcc;
+}
+.nav-link,
+.navbar-brand {
+    color: #151414;
+    font-size:20px;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.background {
+    background: #b6c2bb;
+    padding: 4em 0;
+}
+.background h2{
+    align-items: center;
+    font-size: 2rem;   /* Adjust size as needed */
+    margin: 0; 
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    text-align: center;
+    
+}
+.team {
+	color: #5e5e55;
+	padding: 0 180px;
+}
+.team .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+.team .card {
+	background:none;
+	border: none;
+}
+.team .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+}
+.team .card img{
+    width: 200px;
+    height: 150px;
+}
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+@media (max-width: 768px) {
+    .team {
+        padding: 0 20px; /* Reduce padding for smaller screens */
+    }
+
+    .team .card-columns {
+        -webkit-column-count: 2; /* Use 2 columns for tablets */
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    .team .card img {
+        width: 150px; /* Adjust image size for tablets */
+        height: 120px; /* Adjust image size for tablets */
+    }
+
+    .team .card-title {
+        font-size: 1.1rem; /* Slightly reduce font size for smaller screens */
+    }
+}
+
+/* Media Query for Small Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .team {
+        padding: 0 10px; /* Further reduce padding for mobile */
+    }
+
+    .team .card-columns {
+        -webkit-column-count: 1; /* Use 1 column for small mobile screens */
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    .team .card img {
+        width: 100%; /* Make image full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .team .card-title {
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+}
+@media (max-width: 768px) {
+    .team {
+        padding: 0 20px; /* Reduce padding for smaller screens */
+    }
+
+    .team .card-columns {
+        -webkit-column-count: 2; /* Use 2 columns for tablets */
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    .team .card img {
+        width: 150px; /* Adjust image size for tablets */
+        height: 120px; /* Adjust image size for tablets */
+    }
+
+    .team .card-title {
+        font-size: 1.1rem; /* Slightly reduce font size for smaller screens */
+    }
+}
+
+/* Media Query for Small Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .team {
+        padding: 0 10px; /* Further reduce padding for mobile */
+    }
+
+    .team .card-columns {
+        -webkit-column-count: 1; /* Use 1 column for small mobile screens */
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    .team .card img {
+        width: 100%; /* Make image full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .team .card-title {
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+}

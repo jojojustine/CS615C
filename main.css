@@ -1,0 +1,328 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+.navbar {
+    background:#d0cfcc;
+}
+.nav-link,
+.navbar-brand {
+    color: #151414;
+    font-size:20px;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.header {
+    background-image: url(images/jojosbackground.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
+.description {
+	left: 50%;
+	position: absolute;
+	top: 30%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: bold;
+	color: #05030c;
+}
+.description p {
+	color: #4e4646e0;
+	font-size: 1.3rem;
+	line-height: 1;
+}
+.description button {
+    border:1px solid #dea11c;
+    background:#dea11c;
+    border-radius: 0;
+    color:#fff;
+}
+.description button:hover {
+	border:1px solid #fff;
+    background:#fff;
+    color:#000;
+}
+.features {
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+}
+.feature-title {
+	color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+.features .btn {
+    background-color: #589b37;
+    border: 1px solid #589b37;
+    color: #fff;
+    margin-top: 20px;
+}
+.features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+.background {
+	background: #b6c2bb;
+	padding: 4em 0;
+}
+.background h2{
+    align-items: center;
+    font-size: 2rem;   /* Adjust size as needed */
+    margin: 0; 
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    text-align: center;
+    
+}
+.team {
+	color: #5e5e55;
+	padding: 0 180px;
+}
+.team .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+.team .card {
+	background:none;
+	border: none;
+}
+.team .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+}
+.team .card img{
+    width: 200px;
+    height: 150px;
+}
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+ 
+    .description h1 {
+        font-size: 2em;
+    }
+ 
+    .description p {
+        font-size: 1.2rem;
+    }
+ 
+    .features {
+        margin: 0;
+    }
+}
+@media (max-width: 575.98px) {
+    .team {
+        color: #5e5e55;
+        padding: 0 15px;
+    }
+    .team .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+    .team .card {
+        background:none;
+        border: none;
+    }
+    .team .card-title {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+}
+#demo-modal .modal-content {
+    border-radius: 0;
+    padding: 2rem;
+}
+#demo-modal .modal-header {
+    border-bottom: none;
+}
+#demo-modal h4 {
+    color: #000;
+    font-size: 30px;
+    margin: 0 0 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#demo-modal .close {
+    background: #c0c3c8;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 19px;
+    font-weight: normal;
+    height: 30px;
+    opacity: 0.5;
+    padding: 0;
+    position: absolute;
+    right: 26px;
+    text-align: center;
+    top: 26px;
+    width: 30px;
+}
+#demo-modal .close span {
+    position: relative;
+    top: -3px;
+}
+#demo-modal .modal-body p {
+    color: #999;
+}
+#demo-modal .form-control,
+#demo-modal .btn {
+    min-height: 46px;
+}
+#demo-modal .btn {
+    background-color: #1da098;
+    border: none;
+    color: #fff;
+    min-width: 150px;
+    transition: all 0.4s;
+}
+#demo-modal .btn:hover,
+#demo-modal .btn:focus {
+    background-color: #12968d;
+}
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+    .features {
+        padding: 2em 1em; /* Adjust padding for better spacing */
+        width: 100%; /* Make sure the features section occupies full width */
+    }
+
+    .feature-title {
+        font-size: 1.1rem; /* Reduce font size for smaller screens */
+        text-align: center; /* Center title for better appearance */
+    }
+
+    .features img {
+        width: 100%; /* Ensure images are responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .features .form-control,
+    .features input {
+        width: 100%; /* Ensure input fields stretch across the container */
+    }
+
+    .features .btn {
+        width: 100%; /* Make buttons full-width */
+        margin-top: 10px; /* Add space between elements */
+    }
+}
+
+/* Media Query for Small Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .features {
+        padding: 1em; /* Reduce padding further on smaller screens */
+    }
+
+    .feature-title {
+        font-size: 1rem; /* Further reduce font size for mobile devices */
+    }
+
+    .features img {
+        width: 100%; /* Full width images for small screens */
+    }
+
+    .features .form-control,
+    .features input {
+        width: 100%; /* Inputs are full width */
+    }
+
+    .features .btn {
+        width: 100%; /* Button stretches to full width */
+        padding: 12px; /* Add padding to make button look better */
+    }
+}
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+    .team {
+        padding: 0 20px; /* Reduce padding for smaller screens */
+    }
+
+    .team .card-columns {
+        -webkit-column-count: 2; /* Use 2 columns for tablets */
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    .team .card img {
+        width: 150px; /* Adjust image size for tablets */
+        height: 120px; /* Adjust image size for tablets */
+    }
+
+    .team .card-title {
+        font-size: 1.1rem; /* Slightly reduce font size for smaller screens */
+    }
+}
+
+/* Media Query for Small Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .team {
+        padding: 0 10px; /* Further reduce padding for mobile */
+    }
+
+    .team .card-columns {
+        -webkit-column-count: 1; /* Use 1 column for small mobile screens */
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    .team .card img {
+        width: 100%; /* Make image full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .team .card-title {
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+}
