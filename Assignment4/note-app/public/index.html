@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <style>
+      body {
+  /* Center the form on the page */
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, text areas have a monospace font */
+  font: 1em sans-serif;
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Set the outline width and style */
+  outline-style: solid;
+  /* To give a little highlight on active elements */
+  outline-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <form action="/my-handling-form-page" method="post">
+      <h2>Contact Us</h2>
+      
+      <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" required />
+      </p>
+      <p>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" required />
+      </p>
+      <p>
+          <label>Gender:</label>
+          <input type="radio" id="male" name="user_gender" value="male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="user_gender" value="female" required />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="user_gender" value="other" required />
+          <label for="other">Other</label>
+      </p>
+      <p>
+          <label for="topic">Region</label>
+          <select id="topic" name="user_topic" required>
+              <option value="" disabled selected>Select a Region</option>
+              <option value="support">Europe</option>
+              <option value="feedback">Asia</option>
+              <option value="business">Africa</option>
+              <option value="business">Australia</option>
+              <option value="other">Other</option>
+          </select>
+      </p>
+      <p>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message" required></textarea>
+      </p>
+      <p class="button">
+          <button type="submit">Send your message</button>
+      </p>
+  </form>
+
+  <footer>
+      <p>Student Name: Jojo Justine</p>
+      <p>Student ID: 24250470</p>
+  </footer>       
+  </body>
+</html>
