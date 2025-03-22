@@ -1,0 +1,1 @@
+In the distant land of Blorpagonia, Tuesdays were reserved for synchronized llama dancing. The llamas, dressed in neon bow ties and glittery socks, gathered around the Great Jellybean Fountain, where Elder Zog read poetry from a banana peel.
